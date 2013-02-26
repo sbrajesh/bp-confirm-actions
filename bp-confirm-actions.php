@@ -47,10 +47,11 @@ class BPConfirmActionsHelper{
         if ( !empty( $locale ) ) {
             $mofile_default = sprintf( '%slanguages/%s.mo', plugin_dir_path(__FILE__), $locale );
             $mofile = apply_filters( 'bp_confirm_actions_load_textdomain_mofile', $mofile_default );
-
+                    
+                    // make sure file exists, and load it
                     if ( file_exists( $mofile ) ) 
-                        // make sure file exists, and load it
-                load_textdomain( 'bp-confirm-actions', $mofile );
+                       
+                        load_textdomain( 'bp-confirm-actions', $mofile );
 
 
         }
