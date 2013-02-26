@@ -16,6 +16,7 @@ class BPConfirmActionsHelper{
     
     private function __construct() {
         
+        add_action('plugins_loaded',array($this,'load_textdomain'));
         
         add_filter('bp_get_add_friend_button',array($this,'filter_friendship_btn'));
         add_filter('bp_get_group_join_button',array($this,'filter_groups_membership_btn'));
@@ -35,6 +36,24 @@ class BPConfirmActionsHelper{
             self::$instance=new self();
         
         return self::$instance;
+    }
+    
+    //load text domain
+    function load_textdomain() {
+        
+       
+         $locale = apply_filters( 'bp_confirm_actions_load_textdomain_get_locale', get_locale() );
+        // if load .mo file
+        if ( !empty( $locale ) ) {
+            $mofile_default = sprintf( '%slanguages/%s.mo', plugin_dir_path(__FILE__), $locale );
+            $mofile = apply_filters( 'bp_confirm_actions_load_textdomain_mofile', $mofile_default );
+
+                    if ( file_exists( $mofile ) ) 
+                        // make sure file exists, and load it
+                load_textdomain( 'bp-confirm-actions', $mofile );
+
+
+        }
     }
     
     /**
@@ -96,7 +115,7 @@ class BPConfirmActionsHelper{
         
         wp_enqueue_script('bp-confirm-js', plugin_dir_url(__FILE__).'_inc/bp-confirm.js', array('jquery'));
         
-        $param=array('confirm_message'=>__('Are you really sure about this?'));
+        $param=array('confirm_message'=>__('Are you really sure about this?','bp-confirm-actions'));
         wp_localize_script('bp-confirm-js', 'BPConfirmaActions', $param);
     }
     
