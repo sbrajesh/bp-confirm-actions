@@ -1,17 +1,24 @@
 jQuery(document).ready(function($){
   
-    $(document).on('click','a.bp-needs-confirmation,a.leave-group',function(evt){
+    $(document).on('click','.generic-button a.bp-needs-confirmation,a.leave-group,.pending_friend a',function(evt){
         
-        if(confirm(BPConfirmaActions.confirm_message)){
+       
+            
+       return allow_or_not(evt);
+    })
+    //bad idea but works for friendship
+    $('a.pending_friend,.friendship-button .remove').on('click',function(evt){
+        
+        return allow_or_not(evt);
+    })
+ function allow_or_not(evt){
+      if(confirm(BPConfirmaActions.confirm_message)){
             return true;
             
         }
-            
-        evt.stopImmediatePropagation();
+         evt.stopImmediatePropagation();
         return false;
-    })
-    
-    
+ }   
     
     
 });
