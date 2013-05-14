@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: BP Confirm Actions
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Brajesh Singh
  * Author URI: http://buddydev.com/members/sbrajesh/
  * Plugin URI: http://buddydev.com/plugins/bp-confirm-actions/
  * Description: Makes sure that the user confirm before cancelling friendship/leaving group/unfollowing other users 
  * License: GPL
- * Last Updated: April 13, 2013
+ * Last Updated: May 14, 2013
  */
 
 class BPConfirmActionsHelper{
@@ -63,7 +63,7 @@ class BPConfirmActionsHelper{
      * @return array $btn
      */
     function filter_friendship_btn($btn){
-        if(!($btn['id']='is_friend'||$btn['id']=='is_pending'))
+        if(!($btn['id']=='is_friend'||$btn['id']=='is_pending'))
             return $btn;
         //let us ask the confirm class
 
