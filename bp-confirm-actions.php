@@ -56,18 +56,7 @@ class BPConfirmActionsHelper {
 	 * Load translations.
 	 */
 	public function load_textdomain() {
-
-		$locale = apply_filters( 'bp_confirm_actions_load_textdomain_get_locale', get_locale() );
-		// if load .mo file.
-		if ( ! empty( $locale ) ) {
-			$mofile_default = sprintf( '%slanguages/%s.mo', plugin_dir_path( __FILE__ ), $locale );
-			$mofile         = apply_filters( 'bp_confirm_actions_load_textdomain_mofile', $mofile_default );
-
-			// make sure file exists, and load it.
-			if ( file_exists( $mofile ) ) {
-				load_textdomain( 'bp-confirm-actions', $mofile );
-			}
-		}
+		load_plugin_textdomain( 'bp-confirm-actions', false, basename( dirname( __FILE__ ) ) . '/languages' );
 	}
 
 	/**
