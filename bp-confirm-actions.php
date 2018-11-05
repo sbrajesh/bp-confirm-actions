@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: BP Confirm Actions
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Brajesh Singh
  * Author URI: https://buddydev.com/members/sbrajesh/
  * Plugin URI: https://buddydev.com/plugins/bp-confirm-actions/
@@ -60,7 +60,7 @@ class BPConfirmActionsHelper {
 	}
 
 	/**
-	 * Modify the button class for friendshi buttons
+	 * Modify the button class for friendship buttons
 	 *
 	 * @param array $btn button args.
 	 *
