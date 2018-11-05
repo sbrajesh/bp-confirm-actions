@@ -29,7 +29,7 @@ class BPConfirmActionsHelper {
 	 */
 	private function __construct() {
 
-		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		add_action( 'bp_init', array( $this, 'load_textdomain' ) );
 
 		add_filter( 'bp_get_add_friend_button', array( $this, 'filter_friendship_btn' ) );
 		add_filter( 'bp_get_group_join_button', array( $this, 'filter_groups_membership_btn' ) );
