@@ -83,6 +83,10 @@ class BP_Confirm_Actions_Admin_Settings_Helper {
 					'unfollow'                  => __( 'Unfollow button', 'bp-confirm-actions' ),
 					'delete_activity'           => __( 'Delete activity button', 'bp-confirm-actions' ),
 				),
+				'default' => array(
+					'cancel_friendship' => 'cancel_friendship',
+					'leave_group'       => 'leave_group',
+				),
 				'desc'    => __( 'This settings will not override default confirm actions by BuddyPress', 'bp-confirm-actions' ),
 			)
 		);
