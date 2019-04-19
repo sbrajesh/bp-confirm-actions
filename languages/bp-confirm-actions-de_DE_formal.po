@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BP Confirm Actions\n"
+"POT-Creation-Date: 2019-04-19 15:42+0200\n"
+"PO-Revision-Date: 2019-04-19 15:52+0200\n"
+"Last-Translator: Thorsten Wollenhöfer <thorsten.wollenhoefer@gmail.com>\n"
+"Language-Team: Thorsten Wollenhoefer <thorsten.wollenhoefer@gmail.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bp-confirm-actions.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:69
+msgid "BP confirm actions settings"
+msgstr "BP Confirm Actions Einstellungen"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:71
+msgid "General"
+msgstr "Allgemein"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:72
+msgid "General settings"
+msgstr "Allgemeine Einstellungen"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:77
+msgid "Enabled for"
+msgstr "Aktiviert für"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:80
+msgid "Cancel friendship button"
+msgstr "Schaltfläche „Kontakt aufheben“"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:81
+msgid "Cancel friendship request button"
+msgstr "Schaltfläche „Kontaktanfrage abbrechen“"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:82
+msgid "Leave group button"
+msgstr "Schaltfläche „Gruppe verlassen“"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:83
+msgid "Unfollow button"
+msgstr "Schaltfläche „Nicht folgen“"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:84
+msgid "Delete activity button"
+msgstr "Schaltfläche „Aktivität löschen“"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:90
+msgid "This settings will not override default confirm actions by BuddyPress"
+msgstr ""
+"Diese Einstellungen überschreiben die Standardbestätigungsaktionen von "
+"BuddyPress nicht"
+
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:114
+msgid "BP Confirm Actions Aettings"
+msgstr "BP Confirm Actions Einstellungen"
+
+#. Plugin Name of the plugin/theme
+#: admin/class-bp-confirm-actions-admin-settings-helper.php:115
+msgid "BP Confirm Actions"
+msgstr "(BuddyDev) BP Confirm Actions"
+
+#: admin/pt-settings/src/class-ajax-handler.php:45
+msgid "Invalid action."
+msgstr "Ungültige Aktion."
+
+#: admin/pt-settings/src/class-ajax-handler.php:52
+msgid "Page details not found."
+msgstr "Seitendetails nicht gefunden."
+
+#: admin/pt-settings/src/class-ajax-handler.php:67
+msgid "Page created successfully."
+msgstr "Seite erfolgreich erstellt."
+
+#: admin/pt-settings/src/class-ajax-handler.php:71
+#: admin/pt-settings/src/fields/class-pages-dropdown.php:71
+msgctxt "Ading Settings page panel, page view label"
+msgid "View"
+msgstr "Anzeigen"
+
+#: admin/pt-settings/src/fields/class-image.php:63
+msgid "Remove"
+msgstr "Entfernen"
+
+#: admin/pt-settings/src/fields/class-pages-dropdown.php:51
+msgid "Select Page"
+msgstr "Seite auswählen"
+
+#: admin/pt-settings/src/fields/class-pages-dropdown.php:62
+msgid "Create"
+msgstr "Erstellen"
+
+#: bp-confirm-actions.php:113 bp-confirm-actions.php:117
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: bp-confirm-actions.php:121
+msgid "Are you sure"
+msgstr "Sind Sie sicher"
+
+#: bp-confirm-actions.php:225
+msgid "Are you really sure about this?"
+msgstr "Sind Sie wirklich sicher?"
+
+#. Plugin URI of the plugin/theme
+msgid "https://buddydev.com/plugins/bp-confirm-actions/"
+msgstr "https://buddydev.com/plugins/bp-confirm-actions/"
+
+#. Description of the plugin/theme
+msgid ""
+"Makes sure that the user confirm before cancelling friendship/leaving group/"
+"unfollowing other users"
+msgstr ""
+"Stellt sicher, dass ein Benutzer das Beenden einer Freundschaft, das "
+"Verlassen einer Gruppe oder das nicht mehr Folgen wollen zusätzlich "
+"bestätigen muss"
+
+#. Author of the plugin/theme
+msgid "Brajesh Singh"
+msgstr "Brajesh Singh"
+
+#. Author URI of the plugin/theme
+msgid "https://buddydev.com/members/sbrajesh/"
+msgstr "https://buddydev.com/members/sbrajesh/"
