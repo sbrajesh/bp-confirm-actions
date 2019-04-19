@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: BP Confirm Actions
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Brajesh Singh
  * Author URI: https://buddydev.com/members/sbrajesh/
  * Plugin URI: https://buddydev.com/plugins/bp-confirm-actions/
@@ -31,7 +31,7 @@ class BPConfirmActionsHelper {
 		register_activation_hook( __FILE__, array( $this, 'on_activation' ) );
 
 		add_action( 'bp_init', array( $this, 'load_textdomain' ) );
-		add_action( 'plugin_loaded', array( $this, 'load_admin' ), 9996 );
+		add_action( 'plugins_loaded', array( $this, 'load_admin' ), 9996 );
 
 		add_filter( 'bp_get_add_friend_button', array( $this, 'filter_friendship_btn' ) );
 		add_filter( 'bp_follow_get_add_follow_button', array( $this, 'filter_follow_btn' ) );

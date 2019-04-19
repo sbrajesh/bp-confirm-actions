@@ -111,7 +111,7 @@ class BP_Confirm_Actions_Admin_Settings_Helper {
 	 */
 	public function add_setting_page() {
 		add_options_page(
-			__( 'BP Confirm Actions Aettings', 'bp-confirm-actions' ),
+			__( 'BP Confirm Actions Settings', 'bp-confirm-actions' ),
 			__( 'BP Confirm Actions', 'bp-confirm-actions' ),
 			'manage_options',
 			$this->page_slug,
