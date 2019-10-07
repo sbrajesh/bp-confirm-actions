@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: BP Confirm Actions
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: Brajesh Singh
  * Author URI: https://buddydev.com/members/sbrajesh/
  * Plugin URI: https://buddydev.com/plugins/bp-confirm-actions/
