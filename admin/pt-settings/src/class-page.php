@@ -268,8 +268,9 @@ class Page {
 		if ( ! $this->using_unique_option() ) {
 
 			$options = $function_name( $this->get_option_name() );
+
 			// if option is not set, it is most probably the first run.
-			if ( ! $options ) {
+			if ( empty( $option ) && false === $options ) {
 				$value = $default;
 			} elseif ( isset( $options[ $option ] ) ) {
 				$value = $options[ $option ];
