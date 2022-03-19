@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
     $(document).on('click', '.generic-button a.bp-needs-confirmation,a.leave-group,.pending_friend a', function (evt) {
+       // return allow_or_not(evt);
+    });
+
+    $(document).on('click', 'a.leave-group,.pending_friend a', function (evt) {
         return allow_or_not(evt);
     });
 
